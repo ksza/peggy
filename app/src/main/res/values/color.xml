@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- with color palete generator -->
+    <color name="primary">#009688</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="primary_light">#B2DFDB</color>
+    <!--<color name="accent">#536DFE</color>-->
+    <color name="accent">#FFFFFF</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+    <!-- some of my own -->
+    <color name="checkbox_tint">@color/icons</color>
+    <color name="radio_tint">@color/icons</color>
+    <color name="system_card_background">@color/primary_light</color>
+
+    <color name="card_toolbar_separator">@color/divider</color>
+    <color name="card_action_ripple_colour">@color/divider</color>
+
+    <color name="disabled_color">#cbc9c6</color>
+
+    <color name="red">#FF5252</color>
+
+    <color name="call_missed">@color/red</color>
+    <color name="call_answered">@color/primary</color>
+
+    <!-- Unused! -->
+    <color name="highlight_color">@color/accent</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contact_icon_width">24dp</dimen>
+    <dimen name="contact_icon_height">24dp</dimen>
+    <dimen name="contact_item_margin">4dp</dimen>
+</resources>

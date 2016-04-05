@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_title_icon_right_margin">4dp</dimen>
+    <dimen name="card_title_icon_width">24dp</dimen>
+    <dimen name="card_title_icon_height">24dp</dimen>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_top_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_top_toolbar_selector"
+    android:minHeight="?attr/actionBarSize"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/action_icon"
+            android:layout_width="@dimen/card_title_icon_width"
+            android:layout_height="@dimen/card_title_icon_height"
+            android:layout_marginRight="@dimen/card_title_icon_right_margin"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/action_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/action_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/action_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/action_title"
+            android:visibility="gone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/action_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contact_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

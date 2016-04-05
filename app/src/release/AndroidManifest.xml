@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ksza.peggy">
+
+    <application android:name=".PeggyApplication">
+
+        <!-- Optionally, register CampaignTrackingReceiver and CampaignTrackingService to enable installation campaign reporting -->
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

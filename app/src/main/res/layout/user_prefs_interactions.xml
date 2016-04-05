@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/setup_interactions_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/biking_container"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/setup_card_interaction_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/primary_text"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setup_interactions_label">
+
+        <RadioButton
+            android:id="@+id/everybody_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/radio_tint"
+            android:textColor="@color/primary_text"
+            android:text="@string/setup_card_everybody"
+            android:textSize="12dp" />
+
+        <RadioButton
+            android:id="@+id/preferred_contacts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/everybody_button"
+            android:buttonTint="@color/radio_tint"
+            android:textColor="@color/primary_text"
+            android:text="@string/setup_card_preferred_contacts"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/selected_contacts_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:layout_below="@id/preferred_contacts_button"
+            android:text="@string/setup_card_selected_contacts" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/setup_activities_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setup_card_activities_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/primary_text"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:id="@+id/biking_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setup_activities_label"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_directions_bike_white_24dp" />
+
+        <CheckBox
+            android:id="@+id/biking_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/checkbox_tint"
+            android:textColor="@color/primary_text"
+            android:text="@string/setup_card_biking"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/driving_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setup_activities_label"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/biking_container"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_directions_car_white_24dp" />
+
+        <CheckBox
+            android:id="@+id/driving_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/checkbox_tint"
+            android:textColor="@color/primary_text"
+            android:text="@string/setup_card_driving"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/running_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setup_activities_label"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/driving_container"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_directions_run_white_24dp" />
+
+        <CheckBox
+            android:id="@+id/running_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/checkbox_tint"
+            android:textColor="@color/primary_text"
+            android:text="@string/setup_card_running"
+            android:textSize="12dp" />
+    </LinearLayout>
+</merge>

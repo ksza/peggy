@@ -1,0 +1,1 @@
+-printmapping ../proguard/gplay/mapping.txt

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/fragment_top_toolbar"
+            layout="@layout/fragment_top_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/card_toolbar_separator" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:scrollbarStyle="outsideOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <!-- for biking -->
+                <TextView
+                    android:id="@+id/biking_sms_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/primary_text" />
+
+                <EditText
+                    android:id="@+id/biking_sms_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/biking_sms_label"
+                    android:maxLength="@integer/max_sms_size"
+                    android:textColor="@color/icons" />
+
+                <Button
+                    android:id="@+id/biking_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/biking_sms_edit"
+                    android:text="@string/fragment_configure_sms_use_default_button"
+                    android:textSize="10dp" />
+
+                <!-- for driving -->
+                <TextView
+                    android:id="@+id/driving_sms_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/biking_default"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/primary_text" />
+
+                <EditText
+                    android:id="@+id/driving_sms_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/driving_sms_label"
+                    android:maxLength="@integer/max_sms_size"
+                    android:textColor="@color/icons" />
+
+                <Button
+                    android:id="@+id/driving_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/driving_sms_edit"
+                    android:text="@string/fragment_configure_sms_use_default_button"
+                    android:textSize="10dp" />
+
+                <!-- for running -->
+                <TextView
+                    android:id="@+id/running_sms_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/driving_default"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/primary_text" />
+
+                <EditText
+                    android:id="@+id/running_sms_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/running_sms_label"
+                    android:maxLength="@integer/max_sms_size"
+                    android:textColor="@color/icons" />
+
+                <Button
+                    android:id="@+id/running_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/running_sms_edit"
+                    android:text="@string/fragment_configure_sms_use_default_button"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

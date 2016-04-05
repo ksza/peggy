@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settings"
+        app:showAsAction="never"
+        android:title="@string/settings_menu_entry"/>
+
+    <item
+        android:id="@+id/welcome"
+        app:showAsAction="never"
+        android:title="@string/welcome_menu_entry"/>
+
+    <item
+        android:id="@+id/credits"
+        app:showAsAction="never"
+        android:title="@string/credits_menu_entry"/>
+</menu>

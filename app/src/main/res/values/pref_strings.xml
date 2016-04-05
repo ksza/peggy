@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="setup_card_title">Please tell me your preferences</string>
+    <string name="setup_card_description">Unless you do, I will use these defaults</string>
+
+    <string name="setup_card_activities_label">Activities I should keep an eye out for:</string>
+    <string name="setup_card_biking">Biking</string>
+    <string name="setup_card_driving">Driving</string>
+    <string name="setup_card_running">Running</string>
+
+    <string name="setup_card_should_hang_up">Automatically reject call and send SMS</string>
+
+    <string name="setup_card_interaction_label">Numbers I should reply to:</string>
+    <string name="setup_card_everybody">Any number</string>
+    <string name="setup_card_contacts_only">Contacts Only</string>
+    <string name="setup_card_no_body">None</string>
+    <string name="setup_card_preferred_contacts">Contacts</string>
+    <string name="setup_card_selected_contacts">%1$d selected</string>
+
+    <string name="setup_card_configure_sms">Configure Automatic SMSes</string>
+    <string name="setup_card_done">Done</string>
+
+    <string name="fragment_configure_sms_title">Configure Automatic SMSes</string>
+    <string name="fragment_configure_sms_detail">I send while you are engaged in activities</string>
+    <string name="fragment_configure_sms_use_default_button">Restore Default</string>
+    <string name="fragment_configure_sms_label">SMS for %1$s (%2$d / %3$d):</string>
+
+    <string name="setup_card_snack_text">All done. Modify anytime in settings.</string>
+</resources>

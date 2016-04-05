@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2014 Google, Inc
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">Peggy</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Activity detection strings -->
+    <string name="in_vehicle">In a vehicle</string>
+    <string name="on_bicycle">On a bicycle</string>
+    <string name="on_foot">On foot</string>
+    <string name="running">Running</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown">Unknown activity</string>
+    <string name="walking">Walking</string>
+    <string name="unidentifiable_activity">Unidentifiable activity: %1$d</string>
+
+    <string name="not_connected">GoogleApiClient not yet connected. Try again.</string>
+
+    <string name="call_action">%1$s call</string>
+    <string name="cta_call_back"><![CDATA[Call <b><font color="#536DFE">"%1$s</font></b>]]></string>
+    <string name="while_you_were">... while you were</string>
+
+    <string name="restricted_card_context_info">%1$s call</string>
+
+    <string name="peggy_sms_activity">Hi, I\'m %1$s right now. I\'ll call you back soon!</string>
+
+    <!-- Peggy actions -->
+    <string name="message_sent_action_title">I\'ve sent an SMS</string>
+    <string name="message_sent_action_title_contact">to %1$s</string>
+    <string name="message_error_action_title">Error sending SMS</string>
+    <string name="message_error_action_title_contact">to %1$s</string>
+    <string name="message_error_action_description">I\'ve encountered an error.</string>
+    <string name="message_sent_action_description">Click to view.</string>
+
+    <string name="no_action_title">I haven\'t taken any action</string>
+    <string name="no_action_title_contact">for %1$s</string>
+    <string name="no_action_activity_not_of_interest_description">You haven\'t had interest in this activity.</string>
+    <string name="no_action_activity_not_for_peggy_description">This is just a debug activity.</string>
+    <string name="no_action_bad_accuracy_description">Activity was detected with a low accuracy.</string>
+    <string name="no_action_restricted_description">This contact was restricted for me.</string>
+    <string name="no_action_handled_description">You have answered the call.</string>
+    <string name="no_action_ongoing_description">Call was still ongoing.</string>
+    <string name="no_action_duplicate_reply_description">I\'ve recently sent an SMS with your status.</string>
+    <string name="no_action_disabled_description">I was disabled.</string>
+
+    <string name="unknown_action_title">I don\'t know what to do with this data</string>
+    <string name="unknown_action_description">Click to send feedback.</string>
+
+    <string name="card_entry_action_add_contact">Enable contact for Peggy</string>
+    <string name="card_entry_action_configure">Configure</string>
+
+    <string name="card_entry_action_contact_added">%1$s added to selected contacts</string>
+
+    <!-- Welcome message -->
+    <string name="welcome_message_title">Welcome</string>
+    <string name="welcome_message_details">Read on to learn about me.</string>
+    <string name="welcome_message_card_read_on_button">Continue reading</string>
+
+    <string name="welcome_message_version_features_title">Peggy has been updated!</string>
+    <string name="welcome_message_version_features_details">Read about what\'s new in version %1$s</string>
+
+    <!-- Contacts strings -->
+    <string name="no_of_selected_contacts">%1$d / %2$d</string>
+    <string name="select_all_contacts">All</string>
+    <string name="unselect_all_contacts">None</string>
+
+    <string name="entry_deleted">Deleted</string>
+    <string name="entry_undo">Undo</string>
+
+    <string name="enable_peggy">Enable Peggy</string>
+    <string name="disable_peggy">Disable Peggy</string>
+
+    <string name="new_version_done_action">Got it!</string>
+
+    <string name="peggy_enabled_title">Peggy is Active</string>
+    <string name="peggy_enabled_subtitle">I\'ve sent "%1$d messages today</string>
+    <string name="peggy_disabled_title">Peggy is Inactive</string>
+    <string name="peggy_disabled_subtitle">Wake her up</string>
+
+    <string name="settings_menu_entry">Settings</string>
+    <string name="welcome_menu_entry">Welcome</string>
+    <string name="credits_menu_entry">Credits</string>
+
+    <string name="close_menu_entry">Close</string>
+
+    <string name="sent_sms_notification_title">I\'ve sent an SMS to %1$s</string>
+    <string name="sent_sms_notification_detail">while you were %1$s</string>
+</resources>

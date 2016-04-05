@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/log_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardBackgroundColor="@color/system_card_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/card_top_toolbar"
+                layout="@layout/card_top_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/card_toolbar_separator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <include layout="@layout/user_prefs_activities" />
+
+                <include layout="@layout/user_prefs_interactions" />
+
+                <CheckBox
+                    android:id="@+id/hang_up_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup_card_should_hang_up"
+                    android:layout_below="@+id/radio_group"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="0dp"/>
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/cta_configure_sms"
+                layout="@layout/card_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/cta_done"
+                layout="@layout/card_action"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
